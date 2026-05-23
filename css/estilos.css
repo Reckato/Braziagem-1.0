@@ -274,6 +274,7 @@ footer{
 
     width: 100%;
     max-width: 600px;
+    
 }
 @media (max-width: 768px){
     .tarjeta-contacto{
@@ -597,8 +598,8 @@ footer{
 
     nav ul li{
         width: 100%;
-        text-align: left;
         padding: 10px;
+        box-sizing: border-box;
     }
 
 }
