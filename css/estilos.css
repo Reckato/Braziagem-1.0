@@ -74,9 +74,13 @@ header{
 }
 
 @media (max-width: 600px){
+
     .logo img{
-        height: 80px;
+        max-width: 120px;
+        width: 100%;
+        height: auto;
     }
+
 }
 
 

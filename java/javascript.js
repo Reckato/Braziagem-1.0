@@ -108,21 +108,38 @@ if(modal && imagenModal && cerrarModal){
 }
 
 
-/* Selector de idiomas */
 
+/* Selector de idiomas */
 
 const selectorIdioma = document.getElementById("idioma");
 
-
 if(selectorIdioma){
+
+    // Cargar idioma guardado
+    const idiomaGuardado = localStorage.getItem("idioma");
+
+    if(idiomaGuardado){
+
+        selectorIdioma.value = idiomaGuardado;
+
+        const elementos = document.querySelectorAll("[data-es]");
+
+        elementos.forEach(elemento => {
+
+            elemento.textContent = elemento.getAttribute(`data-${idiomaGuardado}`);
+
+        });
+
+    }
 
     selectorIdioma.addEventListener("change", () => {
 
         const idioma = selectorIdioma.value;
 
+        // Guardar idioma seleccionado
+        localStorage.setItem("idioma", idioma);
+
         const elementos = document.querySelectorAll("[data-es]");
-
-
 
         elementos.forEach(elemento => {
 
