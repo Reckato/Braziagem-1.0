@@ -293,7 +293,7 @@ footer{
 @media (max-width: 480px){
 
     .tarjeta-contacto{
-        width: 92%;
+        width: 90%;
         margin: 0 auto;
         box-sizing: border-box;
     }
