@@ -277,11 +277,6 @@ footer{
 }
 
 
-
-
-
-
-
 @media (max-width: 768px){
     .tarjeta-contacto{
         flex-direction: column;
@@ -293,6 +288,23 @@ footer{
         height: 180px;
     }
 }
+
+
+@media (max-width: 480px){
+
+    .tarjeta-contacto{
+        width: 92%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+}
+
+
+
+
+
+
 
 @media (hover: hover){
     .tarjeta-contacto:hover{
