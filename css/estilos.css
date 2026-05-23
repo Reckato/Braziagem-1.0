@@ -259,23 +259,29 @@ footer{
     }
 }
 
-
-
 .tarjeta-contacto{
     display: flex;
     align-items: center;
     gap: 20px;
 
-    padding: 15px;
-    background-color: #c1dee2;
-
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
     width: 100%;
     max-width: 600px;
-    
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    background-color: #c1dee2;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+
+
+
+
+
+
 @media (max-width: 768px){
     .tarjeta-contacto{
         flex-direction: column;
